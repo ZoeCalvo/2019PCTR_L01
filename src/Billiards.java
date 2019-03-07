@@ -1,8 +1,9 @@
+package src;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import practica2.Ball;
+
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -21,7 +22,7 @@ public class Billiards extends JFrame {
 	private Board board;
 
 	// TODO update with number of group label. See practice statement.
-	private final int N_BALL = 4;
+	private final int N_BALL = 6;
 	private Ball[] bolas;
 	private Thread[] threads;
 

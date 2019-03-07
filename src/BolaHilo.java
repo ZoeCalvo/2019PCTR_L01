@@ -1,6 +1,6 @@
-import practica2.Ball;
-import practica2.Billiards;
-import practica2.Board;
+package src;
+
+
 
 public class BolaHilo implements Runnable {
 

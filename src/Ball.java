@@ -1,7 +1,8 @@
+package src;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
-import practica2.Board;
+
 //TODO Transform the code to be used safely in a concurrent context.  
 public class Ball {
        //TODO  Find an archive named Ball.png 
@@ -16,9 +17,11 @@ public class Ball {
 		ImageIcon ii = new ImageIcon(this.getClass().getResource(Ball));
 		image = ii.getImage();
 		
+		IMG_TAM_X = image.getWidth(null);
+		IMG_TAM_Y = image.getHeight(null);
 		//TODO Depend of image size
-		IMG_TAM_X = 32;
-		IMG_TAM_Y = 32;
+//		IMG_TAM_X = 32;
+//		IMG_TAM_Y = 32;
 
 		
 		x = Billiards.Width/4-16;
