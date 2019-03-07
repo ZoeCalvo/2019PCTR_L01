@@ -2,6 +2,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import practica2.Ball;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -54,6 +56,13 @@ public class Billiards extends JFrame {
 
 	private void initBalls() {
 		// TODO init balls
+		bolas = new Ball[N_BALL];
+
+		for (int i = 0; i < bolas.length; i++) {
+			bolas[i] = new Ball();
+
+		}
+		board.setBalls(bolas);
 	}
 
 	private class StartListener implements ActionListener {
