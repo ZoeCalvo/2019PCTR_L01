@@ -1,5 +1,7 @@
 import java.awt.Image;
 import javax.swing.ImageIcon;
+
+import practica2.Board;
 //TODO Transform the code to be used safely in a concurrent context.  
 public class Ball {
        //TODO  Find an archive named Ball.png 
@@ -39,6 +41,9 @@ public class Ball {
 		reflect();
 		
 		//TODO Check postcondition
+		assert y > Board.TOPBOARD && y < Board.BOTTOMBOARD && x > Board.LEFTBOARD
+		&& x < Board.RIGHTBOARD : "INV: La bola tiene que estar dentro del tablero.";
+
 	}
 
 	private void reflect() {
@@ -56,6 +61,10 @@ public class Ball {
 		}
 	}
 
+	public double getV() {
+		return v;
+	}
+	
 	public int getX() {
 		return (int)x;
 	}
